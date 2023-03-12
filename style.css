@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.meme__container {
+  height: 75px;
+  border: 2px solid rgb(141, 173, 255);
+  background-color: rgb(177, 237, 255);
+}
