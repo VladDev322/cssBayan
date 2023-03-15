@@ -29,25 +29,26 @@ body {
   position: relative;
 }
 
+.meme__container:hover .meme__label {
+  background-color: rgb(89, 216, 255);
+}
+
+.meme__container:hover .plus {
+  transform: rotateZ(45deg);
+}
+
+.meme__container:hover .meme__img {
+  width: 100%;
+  transform: scale(1);
+}
+
 .meme__label {
+  z-index: 100;
   display: block;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
   border: 2px solid rgb(141, 173, 255);
-}
-
-.meme__label:hover {
-  background-color: rgb(89, 216, 255);
-}
-
-.meme__label:hover ~ .plus {
-  transform: rotateZ(45deg);
-}
-
-.meme__label:hover ~ .meme__img {
-  width: 100%;
-  transform: scale(1);
 }
 
 .meme__input {
