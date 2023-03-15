@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +11,14 @@ body {
 .container {
   width: 30%;
   margin: 0 auto;
+}
+
+.container:hover .plus {
+  opacity: 1;
+}
+
+.container:hover .meme__label {
+  color: rgb(187, 11, 211);
 }
 
 .title {
@@ -23,7 +35,6 @@ body {
   font-size: 2rem;
   font-weight: 600;
   border: 2px solid rgb(141, 173, 255);
-  background-color: rgb(177, 237, 255);
 }
 
 .meme__label:hover {
@@ -35,8 +46,8 @@ body {
 }
 
 .meme__label:hover ~ .meme__img {
-  display: block;
   width: 100%;
+  transform: scale(1);
 }
 
 .meme__input {
@@ -48,8 +59,8 @@ body {
 }
 
 .meme__input:checked ~ .meme__img {
-  display: block;
   width: 100%;
+  transform: scale(1);
 }
 
 .meme__input:checked ~ .plus {
@@ -62,12 +73,14 @@ body {
   right: 2%;
   height: 40px;
   transform: rotateZ(0deg);
+  opacity: 0;
   transition: transform 0.2s;
 }
 
 .meme__img {
-  display: none;
-  transition: transform 0.2s;
+  transform: scale(0);
+  width: 0%;
+  transition: transform 0.1s;
 }
 
 @media (max-width: 1180px) {
