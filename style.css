@@ -1,5 +1,6 @@
 html {
-  min-height: 101vh
+  overflow-y: scroll;
+  overflow-y: overlay;
 }
 
 body {
